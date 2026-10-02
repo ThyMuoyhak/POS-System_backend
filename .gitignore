@@ -1,0 +1,19 @@
+# --- secrets: never commit these -------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- the shop's live data (orders, hashed passwords, audit trail) -----
+*.db
+*.db-journal
+*.db-wal
+*.sqlite3
+
+# --- credentials printed on first run / by manage.py ------------------
+initial_admin_password.txt
+FIRST_LOGINS.txt
+
+# --- runtime noise ----------------------------------------------------
+*.log
+__pycache__/
+*.py[cod]
